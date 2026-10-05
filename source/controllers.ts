@@ -1,8 +1,8 @@
 import { ContactsCollection, Contact } from "./models";
 
 export type ContactsControllerOptions = {
-  action?: "get" | "save";
-  params?: Contact;
+  action?: "get" | "save" | null;
+  params?: Contact | null;
 };
 
 class ContactsController {

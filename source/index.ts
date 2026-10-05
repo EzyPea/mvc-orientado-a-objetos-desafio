@@ -8,7 +8,7 @@ function parseaParams(argv): ContactsControllerOptions {
 
   return {
     action: args.action,
-    params: JSON.parse(args.params),
+    params: args.params ? JSON.parse(args.params) : null,
   };
 }
 
